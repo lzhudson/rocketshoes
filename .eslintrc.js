@@ -25,5 +25,6 @@ module.exports = {
         ignoreElements: ['th', 'input'],
       },
     ],
+    'react/state-in-constructor': ['off', 'never'],
   },
 };
