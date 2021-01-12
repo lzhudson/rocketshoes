@@ -17,5 +17,13 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off',
+    'jsx-a11y/control-has-associated-label': [
+      2,
+      {
+        labelAttributes: ['label'],
+        controlComponents: ['CustomComponent'],
+        ignoreElements: ['th', 'input'],
+      },
+    ],
   },
 };
