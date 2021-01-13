@@ -27,5 +27,6 @@ module.exports = {
       },
     ],
     'react/state-in-constructor': ['off', 'never'],
+    'no-console': ['error', { allow: ['tron'] }],
   },
 };
