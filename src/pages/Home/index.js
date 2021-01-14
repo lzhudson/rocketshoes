@@ -36,7 +36,7 @@ class Home extends Component {
     return (
       <ProductList>
         {products.map((product) => (
-          <li key={product.key}>
+          <li key={product.id}>
             <img src={product.image} alt={product.title} />
             <strong>{product.title}</strong>
             <span>{product.priceFormatted}</span>
@@ -45,7 +45,7 @@ class Home extends Component {
               onClick={() => this.handleAddProduct(product)}
             >
               <div>
-                <MdAddShoppingCart size={16} color="#FFF" /> 3
+                <MdAddShoppingCart size={16} color="#FFF" />
               </div>
               <span>ADICIONAR AO CARRINHO</span>
             </button>
@@ -55,6 +55,7 @@ class Home extends Component {
     );
   }
 }
+
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators(CartActions, dispatch);
 export default connect(null, mapDispatchToProps)(Home);
